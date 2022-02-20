@@ -1,0 +1,60 @@
+* {
+	margin: 0 auto; padding: 0; font-size: 20px;
+}
+a {
+	text-decoration: none; color: inherit; 
+}
+li {
+	list-style: none;
+}
+header {
+	width: 1200px; height: 180px;
+}
+#logo {
+	width: 1200px; height: 180px; float: left;
+}
+#title {
+	width: 300px; height: 60px; float: left;
+	transform: rotate(-0.08turn); line-height: 60px; 
+	font-weight: 700; color: rgb(64,99,117); font-size: 30px; margin-top: 20px;
+}
+#new-todobtn {
+	width: 200px; height: 50px; float: right; background: rgb(32,173,238); 
+	text-align: center; font-weight: 400; line-height: 50px;
+	margin-top: 50px; margin-right: 20px; color: #fff;
+	cursor: pointer;
+}
+section {
+	width: 1200px; background:#cbc; 
+}
+section .menu {
+	float: right; 
+}
+section .navi {
+	float: right; 
+}
+section .menu .navi li {
+	float: left; margin-top: 20px; margin-right: 20px;
+}
+li.w35h10{
+	width: 350px; height: 100px; background-color: rgb(52,84,97);
+	text-indent: 10px; line-height: 100px;
+}
+li.w35h10>span {
+	font-weight: bold; color: #fff; 
+	font-size: 50px; 
+}
+.submenu li {
+	width: 350px; height: 150px; background: rgb(206,229,239);  position: relative;
+}
+span.explain {
+	font-size: 15px; display: inline-block; margin-right: 5px;
+}
+div.title {
+	height: 80px; font-weight: bold; margin-right: 5px;
+}
+li .button {
+	position: absolute; right: 10px; bottom: 10px;
+    width: 40px;  height: 30px;
+	line-height: 30px; font-size: 20px;
+}
