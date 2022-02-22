@@ -19,7 +19,7 @@ public class TodoTypeServlet  extends HttpServlet{
 		TodoDao todoDao = new TodoDao();
 		if (id_ != null && type != null) {
 			long id = Long.parseLong(id_);
-			
+			System.out.println("id: "+ id + " type: "+ type );
 			int updateCount = todoDao.updateTodo(id, type);
 			if (updateCount == 1) {
 				response.setStatus(200);
