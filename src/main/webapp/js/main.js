@@ -3,11 +3,10 @@
 	type = $(this).parent().parent().attr('id')
 	console.log(id)
 	console.log(type)
-
-	var xhr = new XMLHttpRequest();
+	var oReq = new XMLHttpRequest();
 	var typeDestination = (type === "TODO") ? "DOING" : "DONE"
-	xhr.addEventListener("load",function(){
-		if(xhr.status === 200){
+	oReq.addEventListener("load",function(){
+		if(oReq.status === 200){
 			console.log("success");
 			var parent = document.getElementById(typeDestination);
 			var item = document.getElementById(id);
@@ -20,17 +19,17 @@
 			parent.appendChild(item)
 		}
 	})
-	xhr.open("POST", "./type");
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send("id=" + id + "&type=" + typeDestination);
+	oReq.open("POST", "./type");
+	oReq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	oReq.send("id=" + id + "&type=" + typeDestination);
 })*/
 function button_click(id, type) {
 	console.log(id)
 	console.log(type)
-	var xhr = new XMLHttpRequest();
+	var oReq = new XMLHttpRequest();
 	var typeDestination = (type === 'TODO') ? 'DOING' : 'DONE';
-	xhr.addEventListener("load", function() {
-		if (xhr.status === 200) {
+	oReq.addEventListener("load", function() {
+		if (oReq.status === 200) {
 			console.log("success");
 			var parent = document.getElementById(typeDestination);
 			var item = document.getElementById(id);
@@ -42,7 +41,7 @@ function button_click(id, type) {
 			parent.appendChild(item);
 		}
 	});
-	xhr.open("POST", "./type");
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send("id=" + id + "&type=" + typeDestination);
+	oReq.open("POST", "./type");
+	oReq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	oReq.send("id=" + id + "&type=" + typeDestination);
 }
