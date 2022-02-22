@@ -41,3 +41,19 @@
   ( id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT, title VARCHAR(255) NOT NULL, name VARCHAR(100) NOT NULL, sequence INT(1) NOT NULL, type VARCHAR(20) DEFAULT 'TODO', regdate DATETIME DEFAULT NOW(), 
   PRIMARY KEY (id) );
   ```
+
+## 💻실행화면
+![웹_캡처_20-2-2022_195630_localhost](https://user-images.githubusercontent.com/48908552/155048423-ae1d7af7-27bd-4a8a-b33f-d2b4649689df.jpeg)
+
+![todo-등록1](https://user-images.githubusercontent.com/48908552/155048440-9b3c0808-8190-4af7-984e-0e821cc33c33.gif)
+> todo 등록
+
+![내용지우기2](https://user-images.githubusercontent.com/48908552/155048455-6d7f3f02-65fe-4a13-a29b-0e097e87092d.gif)
+> 내용지우기
+
+![변경3](https://user-images.githubusercontent.com/48908552/155048465-ecc8b2a8-28af-425a-a770-7afa33fb1b36.gif)
+> 변경
+
+
+
+
