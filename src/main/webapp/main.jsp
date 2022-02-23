@@ -12,7 +12,6 @@
 <title>나의 해야할 일들</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<script src="http://code.jquery.com/jquery-1.12.1.js"></script>
 
 </head>
 <body>
